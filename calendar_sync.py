@@ -107,8 +107,8 @@ def transform_event(event):
             'timeZone': 'UTC',
         },
         'organizer': {
-            'displayName': event.organizer.name,
-            'email': event.organizer.email,
+            'displayName': event.organizer.name if event.organizer is not None else None,
+            'email': event.organizer.email if event.organizer is not None else None,
         },
         'attendees': sorted(attendees, key=lambda k: k['email']),
         'reminders': {
