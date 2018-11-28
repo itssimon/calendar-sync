@@ -20,7 +20,7 @@ One-way synchronization of calendar events from Exchange server to Google Calend
 5. Install Python 3 and make sure `pip` is available
 6. Install dependencies
      * Run `pip install git+https://github.com/linkedin/pyexchange`
-     * Run `pip install --upgrade google-api-python-client`
+     * Run `pip install --upgrade oauth2client google-api-python-client`
 6. Run the `calendar_sync.bat` by double-clicking on it (Windows) or run `python ./calendar_sync.py` in the command line. On first run a browser window will be opened and you're asked for authorization to manage your Google Calendar.
 
 ## Troubleshoot
